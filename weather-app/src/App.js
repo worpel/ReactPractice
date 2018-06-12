@@ -6,6 +6,10 @@ import './index.css';
 
 const API_KEY = 'd1d1c71914712159c9a05d89de951e50'
 
+// const picChange = () => {
+
+// }
+
 class App extends React.Component {
   state = {
     city: undefined,
@@ -23,6 +27,7 @@ class App extends React.Component {
     this.setState({
       city: "City: " + data.name,
       location: "Location: " + data.sys.country,
+      weather: "Weather Type: " + data.weather[0].description,
       temperature: "Temperature: " + data.main.temp + "°C",
       humidity: "Humidity: " + data.main.humidity + "%",
     });
@@ -32,7 +37,7 @@ class App extends React.Component {
       <div id="Main">
         <Headings />
         <Form fetchWeather={this.fetchData} />
-        <Weather city={this.state.city} location={this.state.location} temperature={this.state.temperature} humidity={this.state.humidity} />
+        <Weather city={this.state.city} location={this.state.location} weather={this.state.weather} temperature={this.state.temperature} humidity={this.state.humidity} />
       </div>
     );
   }
