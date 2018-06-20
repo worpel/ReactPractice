@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rubik');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://bit.ly/2JMRr7k);
+  background-size: cover;
+  background-position: center;
+}
+
+#main {
+  width: 50vw;
+  height: 20vh;
+  text-align: center;
+  padding-top: 15vh;
+  margin: 0 auto;
+  color: white;
+}
+
+#title {
+  font-family: Rubik;
+  font-size: 3.5rem;
+  text-shadow: 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+#subtitle {
+  padding-top: 2vh;
+  font-family: Open Sans;
+  text-shadow: 0 0 5px black;
+  font-style: italic;
+}
